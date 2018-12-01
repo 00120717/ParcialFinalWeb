@@ -49,8 +49,18 @@ var app = {
     let delete = this.deleteHotel;
     let update = this.updateHotel;
     
+    form.addEventListener("submit",function(evt){
+        evt.preventDefault();
 
+    })
+
+    },
+    deleteHotel:(evt,data,tr,tbody)=>{
+        evt.preventDefault();
+        fetch('/api/Hoteles',)
     }
+    
+
 
     
     

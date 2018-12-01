@@ -6,20 +6,20 @@ block content
     h1= 'Administrador de Hoteles'
   
   form(action="/api/Hoteles", method="post", name='hotels')
-    input(type="text" name='idHotel' readonly class='box' )
-    input(type="text" name='nameH' class='box' )
-    input(type="text" name='addres' class='box' )
-    input(type="text" name='precio' class='box' )  
+    input(type="text" name='idHotel' readonly class='box' placeholder='Id')
+    input(type="text" name='nameH' class='box' placeholder='Hotel')
+    input(type="text" name='addres' class='box' placeholder='Direccion')
+    input(type="text" name='precio' class='box' placeholder='Precio por Noche')  
     input(type="submit" value='Guardar' id='btn-save')
+  .hoteles  
+    table
+      thead
+        th ID
+        th Nombre
+        th Ubicacion
+        th Precio
+        th Opciones
+      tbody.hoteles
 
-  table 
-    thead
-      th ID
-      th Nombre
-      th Ubicacion
-      th Precio
-      th Opciones
-    tbody.hoteles
-      
         
 

@@ -13,7 +13,8 @@ a {
 
 h1{
   font-family: 'Sedgwick Ave', cursive;
-
+  color: rgb(50, 154, 219);
+  text-shadow: rgb(13, 17, 13)
 }
 
 #btn-save{
@@ -41,6 +42,17 @@ h1{
 
 i{
   padding: 2%;
-  color: lightgray;
+  color: whitesmoke;
   
+}
+
+.hoteles > th{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+form{
+  display: flex;
+  padding: 12px;
+  background-color: lightgrey;
 }
