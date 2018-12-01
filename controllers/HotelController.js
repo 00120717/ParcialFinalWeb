@@ -11,7 +11,7 @@ HotelController.create = function(req,res){
         precio: req.body.precio
     });
 
-    newHotel.save(function(err,saved){
+    newHotel.save('/api/Hoteles',function(err,saved){
         if(err){
             res.status(500);
             res.json({code:500,err});
@@ -66,7 +66,7 @@ HotelController.delete = function(req,res){
             res.status(500);
             res.json({code:500,err});
         }else{
-            res.json({ok:true,deleted});
+            res.json({ok:true,message:'deleted',deleted});
         }
     });
 }

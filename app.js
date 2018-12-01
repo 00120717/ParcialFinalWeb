@@ -14,6 +14,7 @@ var app = express();
 //Coneccion
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/parcial',{useNewUrlParser:true})
+.then(()=>{console.log('mongoose connected')})
 .catch((err)=>{console.log(err)});
 
 // view engine setup
