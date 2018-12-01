@@ -1,6 +1,25 @@
 extends layout
 
 block content
-  h1= Administardor de tareas
+  .title
+    i.fas.fa-hotel
+    h1= 'Administrador de Hoteles'
   
-  //form(action='/api/Hoteles' methos='post' name='FormHotels')
+  form(action="/api/Hoteles", method="post", name='hotels')
+    input(type="text" name='idHotel' readonly class='box' )
+    input(type="text" name='nameH' class='box' )
+    input(type="text" name='addres' class='box' )
+    input(type="text" name='precio' class='box' )  
+    input(type="submit" value='Guardar' id='btn-save')
+
+  table 
+    thead
+      th ID
+      th Nombre
+      th Ubicacion
+      th Precio
+      th Opciones
+    tbody.hoteles
+      
+        
+
